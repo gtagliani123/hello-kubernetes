@@ -24,5 +24,6 @@ app.get('/', function (req, res) {
 
 // Set up listener
 app.listen(port, function () {
+  console.log(process.env);
   console.log("Listening on: http://%s:%s", os.hostname(), port);
 });
